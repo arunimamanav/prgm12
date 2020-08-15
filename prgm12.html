@@ -1,0 +1,39 @@
+<html>
+<head><title>....</title>
+</head>
+<body>
+<button onClick="areacircle()">circle</button>
+<button onClick="arearectangle()">rectangle</button>
+<button onClick="primenum()">prime</button>
+<P id="demo"></P>
+<script type="text/javascript">
+function areacircle()
+                  { var r = prompt("Please enter radious");
+                    var area=3.14*r*r;
+                    window.alert(area);
+                   document.getElementById('demo').innerHTML=txt;
+                  }
+
+function arearectangle()
+                  { var w =prompt("enter width");
+                    var l=prompt("enter length");
+                    area_of_the_rectangle=w*l;
+    window.alert(area_of_the_rectangle);
+                    document.getElementById('demo').innerHTML=txt;
+                  }
+
+function primenum()
+                {
+                   var lim=prompt("enter your limit");
+for(var i=1,txt="";i<lim;i++)
+{
+if (i%2!=0) {
+txt=txt+i+"<br>";
+}
+}
+document.getElementById('demo').innerHTML=txt;
+}
+
+</script>
+</body>
+</html>
